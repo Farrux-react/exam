@@ -1,0 +1,115 @@
+.simple {
+    background: url(../../../images/simple-bg.png) no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    padding-bottom: 140px;
+
+    .simple-content {
+        padding-top: 140px;
+        display: flex;
+        align-items: center;
+
+        .simple-text {
+            margin-right: 120px;
+
+            h2 {
+                font-family: $font2;
+                font-weight: 400;
+                font-size: 48px;
+                line-height: 56px;
+                letter-spacing: -0.369231px;
+                color: #36536B;
+                margin-bottom: 24px;
+            }
+
+            p {
+                max-width: 445px;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 28px;
+                color: #6C8294;
+            }
+        }
+
+        .simple-img {
+            width: 263px;
+            height: 500px;
+            display: flex;
+        }
+    }
+}
+
+@media screen and (max-width: 1105px) {
+    .simple {
+
+        .simple-content {
+
+            .simple-text {
+                margin-right: 40px;
+
+                p {
+                    max-width: 300px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .simple {
+
+        .simple-content {
+            flex-direction: column-reverse;
+            margin: 0 auto;
+
+            .simple-text {
+                margin-right: 0px;
+                text-align: center;
+
+                p {
+                    max-width: 573px;
+                }
+            }
+
+            .simple-img {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .simple {
+        background: none;
+
+        .simple-content {
+            flex-direction: column-reverse;
+            margin: 0 auto;
+
+            .simple-text {
+                margin-right: 0px;
+                text-align: center;
+
+                h2 {
+                    font-size: 36px;
+                    line-height: 36px;
+                }
+
+                p {
+                    max-width: 328px;
+                }
+            }
+
+            .simple-img {
+                flex-direction: column;
+                margin-bottom: 150px;
+
+                img {
+                    margin: 0 auto;
+                }
+
+            }
+        }
+    }
+}
